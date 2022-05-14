@@ -65,7 +65,7 @@ body {
   background: var(--backgroundColor);
   font-family: var(--bodyFont);
   font-weight: 400;
-  line-height: 1.75;
+  line-height: 1.5;
   color: var(--textColor);
 }
 
