@@ -34,5 +34,6 @@ const Wrapper = styled.main`
       display: block;
     }
   }
+  
 `
 export default Wrapper;
