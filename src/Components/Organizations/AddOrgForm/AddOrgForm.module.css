@@ -1,0 +1,31 @@
+/* The container must be positioned relative: */
+#outer {
+    font-family: Arial;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+  }
+  
+#outer select{
+    font-family: Arial;
+    background-color: bisque;
+    width: 200px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+#outer fieldset{
+    margin-bottom: 20px;
+}
+
+#outer select option{
+
+    size: 10px;
+}
+
+#outer input[type="email"]{
+    background: transparent;
+    outline: none;
+    border: none;
+}
+

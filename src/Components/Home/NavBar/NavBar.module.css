@@ -1,0 +1,12 @@
+#NavBar {
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height:max-content;
+    width: auto;
+    border:1px solid;
+    background-color: #410b2d;
+    border-radius: 0%;
+    
+  }

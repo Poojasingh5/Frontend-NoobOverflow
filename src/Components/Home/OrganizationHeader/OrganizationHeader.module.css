@@ -1,0 +1,22 @@
+#OuterDiv{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 30px;
+    width:200px;
+    height: 35px;
+    margin: 2px;
+}
+#name{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 5px;
+}
+
+
+#OuterDiv:hover{
+   transform:scale(1.05,1.05);
+   transition: 500ms;
+}
