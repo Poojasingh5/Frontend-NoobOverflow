@@ -1,0 +1,43 @@
+#outer{
+    width: 15rem;
+    height: 2rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1rem;
+}
+
+.base{
+    padding: 0.5rem;
+    align-self: center;
+    box-shadow: 1px 1px 2px;
+    background-color: #e0c5db7d;
+    cursor: pointer;
+    font-weight: 400;
+}
+.pressed{
+    padding: 0.5rem;
+    align-self: center;
+    box-shadow: 1px 1px 2px;
+    background-color: #e0c5db7d;
+    cursor: pointer;
+    font-weight: 400;
+    box-shadow: 1px 1px 5px inset;
+}
+
+#buy{
+    border-radius: 10px 0px 0px 10px;
+}
+
+#rent{
+    border-radius: 0px 10px 10px 0px;
+}
+
+#outer div:hover{
+    transform: scale(0.99,0.99);
+    transition: 0.2s;
+    box-shadow: 1px 1px 5px inset;
+}
+
+
