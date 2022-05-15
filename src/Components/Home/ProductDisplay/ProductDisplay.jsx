@@ -5,7 +5,7 @@ import styles from './ProductDisplay.module.css'
 export default function ProductDisplay(props) {
 
     function populateProducts() {
-        return ((props.list).map((product) => <ProductCard info={product} />));
+        return ((props.list).map((product) => <ProductCard prodInfo={product} />));
     }
 
     return <div id={styles.outer}>
