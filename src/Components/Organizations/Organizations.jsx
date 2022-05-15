@@ -9,11 +9,13 @@ export default function Organizations() {
 
     const location = useLocation();
     const list = location.state.list;
+    const userInfo = { userId: location.state.userId, userName: location.state.userName };
     console.log(list);
+    console.log(userInfo);
     // const list = [];
 
     function populateOrganizations() {
-        return (list.map((x) => <OrganizationsCard org={x} />));
+        return (list.map((x) => <OrganizationsCard org={x} userInfo={userInfo} />));
     }
 
     const [addClicked, setAddClicked] = useState(false);
@@ -27,7 +29,7 @@ export default function Organizations() {
 
         <div id={styles.orgList}>{populateOrganizations()}</div>
 
-        <div id={styles.addOrg} onClick={updateAddClicked}><OrganizationsCard org={addCard} /></div>
+        <div id={styles.addOrg} onClick={updateAddClicked}><OrganizationsCard org={addCard} userInfo={userInfo} /></div>
 
         {addClicked && <AddOrgForm />}
     </div>
