@@ -4,15 +4,16 @@
     align-items: center;
     border: 2px solid white;
     border-radius: 30px;
-    width:200px;
+    max-width:200px;
     height: 35px;
     margin: 2px;
+    cursor: pointer;
 }
 #name{
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  padding: 5px;
+  padding: 0px 10px 0px 10px;
 }
 
 

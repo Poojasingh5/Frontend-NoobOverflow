@@ -1,24 +1,22 @@
 #outerDiv{
-    
-    background-color: #e7d9e87d;
+    background-color: #e7d9e88d;
     border-radius: 5px;
     height: 150px;
-    position:absolute;
-    align-self:flex-end;
+    position: absolute;
     padding: 10px;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(7px);
     box-shadow: 0px 5px 10px 0px #e7d9e8;
     border: #d9ccda;
     z-index: 2;
 }
 
-a{
+#outerDiv a{
     text-decoration: none;
     color: black;
-    font-family:Verdana;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: small;
 }
 
-a:hover{
-    background-color: #e7d9e8b0;
+#outerDiv a:hover{
+    color: #1203e9b0;
 }

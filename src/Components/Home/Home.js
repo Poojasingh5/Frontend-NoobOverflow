@@ -8,6 +8,8 @@ import SellForm from './SellForm/SellForm.jsx';
 import { useLocation } from 'react-router-dom';
 
 export default function Home() {
+    const location = useLocation();
+    const { userInfo, orgInfo } = location.state;
 
     const [productList, setProductList] = useState(demoProductList);
 
@@ -19,7 +21,7 @@ export default function Home() {
 
     return <div>
 
-        <NavBar filters={filters} fxFilters={setFilters} />
+        <NavBar userInfo={userInfo} orgInfo={orgInfo} filters={filters} fxFilters={setFilters} />
         <Categories filters={filters} fxFilters={setFilters} />
         <ProductDisplay list={productList} />
         {isFormOpen && <SellForm />}
