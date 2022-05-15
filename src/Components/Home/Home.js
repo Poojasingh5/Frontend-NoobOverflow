@@ -5,6 +5,7 @@ import ProductDisplay from './ProductDisplay/ProductDisplay.jsx';
 import demoProductList from './ProductDisplay/ProductList.js';
 import SellFab from './SellFab/SellFab.jsx';
 import SellForm from './SellForm/SellForm.jsx';
+import { useLocation } from 'react-router-dom';
 
 export default function Home() {
 

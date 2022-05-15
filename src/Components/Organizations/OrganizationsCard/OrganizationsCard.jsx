@@ -11,7 +11,7 @@ export default function OrganizationsCard(props) {
         navigate('/organization/home', { state: { userInfo: props.userInfo, orgInfo: props.org } });
     }
 
-    return <div id={styles.outer} onClick={handleClick()}>
+    return <div id={styles.outer} onClick={handleClick}>
         <Avatar source={props.org.orgIcon} size="100px" />
         <div id={styles.title}>{props.org.orgTitle}</div>
     </div>
