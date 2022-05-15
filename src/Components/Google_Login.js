@@ -1,15 +1,18 @@
 import React from 'react';
 import GoogleLogin from 'react-google-login';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import demo from '../DemoData/Api1';
 
 function Login1() {
 
   const navigate = useNavigate();
 
+  const apiReturn = demo;
+
   function handleSuccess(response) {
     console.log(response);
-    navigate('/organizations');
-
+    console.log(apiReturn);
+    navigate('/organizations', { state: apiReturn });
   }
 
   function handleFailure(response) {

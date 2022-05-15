@@ -7,9 +7,10 @@ import { useLocation } from 'react-router-dom';
 
 export default function Organizations() {
 
-    // const location = useLocation();
-    // const { list } = location.state;
-    const list = [];
+    const location = useLocation();
+    const list = location.state.list;
+    console.log(list);
+    // const list = [];
 
     function populateOrganizations() {
         return (list.map((x) => <OrganizationsCard org={x} />));

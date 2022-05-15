@@ -4,8 +4,9 @@ import styles from './OrganizationsCard.module.css'
 
 export default function OrganizationsCard(props) {
 
+
     return <div id={styles.outer}>
-        <Avatar source={props.org.imgUrl} size="100px" />
-        <div id={styles.title}>{props.org.title}</div>
+        <Avatar source={props.org.orgIcon} size="100px" />
+        <div id={styles.title}>{props.org.orgTitle}</div>
     </div>
 }
