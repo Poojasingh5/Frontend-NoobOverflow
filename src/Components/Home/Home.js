@@ -24,7 +24,7 @@ export default function Home() {
         <NavBar userInfo={userInfo} orgInfo={orgInfo} filters={filters} fxFilters={setFilters} />
         <Categories filters={filters} fxFilters={setFilters} />
         <ProductDisplay list={productList} />
-        {isFormOpen && <SellForm />}
+        {isFormOpen && <SellForm sellerId={userInfo.userId} orgId={orgInfo.orgId} />}
         <SellFab fxSetIsFormOpen={setIsFormOpen} />
     </div>
 

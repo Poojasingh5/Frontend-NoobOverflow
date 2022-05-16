@@ -2,15 +2,27 @@ import React from 'react';
 import styles from './SellForm.module.css'
 import categories from './categoriesSelect'
 
-export default function SellForm() {
+export default function SellForm(props) {
+
+    let obj = {};
 
     function handleSubmit(event) {
         event.preventDefault();
-        console.log(event.target.rentPrice.value);
 
+        obj = {
+            prodImg: event.target.prodImg.value,
+            prodTitle: event.target.prodTitle.value,
+            prodDesc: event.target.prodDesc.value,
+            category: event.target.category.value,
+            rentPrice: event.target.rentPrice.value,
+            sellPrice: event.target.sellPrice.value,
+            sellerId: props.sellerId,
+            orgId: props.orgId
+        };
+        console.log(obj);
 
         if (event.target.rentPrice.value === '' && event.target.sellPrice.value === '')
-            alert('Please enter the price of your product!');
+            alert('Please enter price for your product!');
         else
             alert('Ad posted successfully!');
     }
@@ -21,12 +33,12 @@ export default function SellForm() {
 
                 <fieldset>
                     <legend>Title</legend>
-                    <input type="text" id='title' required />
+                    <input type="text" id='prodTitle' required />
                 </fieldset>
 
                 <fieldset>
                     <legend>Description</legend>
-                    <input type="text" id='desc' required />
+                    <input type="text" id='prodDesc' required />
                 </fieldset>
 
                 <div id={styles.prices}>
@@ -43,15 +55,15 @@ export default function SellForm() {
 
                 <fieldset>
                     <legend>Category</legend>
-                    <select>
+                    <select id='category'>
                         <option disabled selected>Select one</option>
-                        {categories.map(cat => <option id={cat.id} key={cat.key}>{cat.title}</option>)}
+                        {categories.map(cat => <option id={cat.id} key={cat.key} value={cat.id}>{cat.title}</option>)}
                     </select>
                 </fieldset>
 
                 <fieldset>
                     <legend>Image</legend>
-                    <input type='file' id='img' required />
+                    <input type='file' id='prodImg' required />
                 </fieldset>
 
                 <input type='submit' value='Post Ad!' />
