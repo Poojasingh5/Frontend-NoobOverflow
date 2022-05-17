@@ -19,7 +19,6 @@ export default function SellForm(props) {
             sellerId: props.sellerId,
             orgId: props.orgId
         };
-        console.log(obj);
 
         if (event.target.rentPrice.value === '' && event.target.sellPrice.value === '')
             alert('Please enter price for your product!');

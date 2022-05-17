@@ -7,7 +7,6 @@ export default function Profile(props) {
     const [isClicked, setIsClicked] = useState(false);
 
     function updateIsClicked(event) {
-        console.log(event.target);
         setIsClicked(pre => !pre);
     }
 

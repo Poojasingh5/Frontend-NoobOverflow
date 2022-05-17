@@ -4,10 +4,10 @@ import styles from './OrganizationsCard.module.css'
 import { useNavigate } from 'react-router-dom';
 
 export default function OrganizationsCard(props) {
+    
     const navigate = useNavigate();
 
     function handleClick() {
-        console.log(props);
         navigate('/organization/home', { state: { userInfo: props.userInfo, orgInfo: props.org } });
     }
 

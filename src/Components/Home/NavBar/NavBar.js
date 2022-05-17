@@ -3,15 +3,9 @@ import Logo from "../Logo";
 import styles from "./NavBar.module.css";
 import SearchBar from "../SearchBar/SearchBar";
 import OrganizationHeader from "../OrganizationHeader/OrganizationHeader";
-import { useNavigate } from "react-router-dom";
 import Profile from "../../Profile/Profile";
 
 export default function NavBar(props) {
-
-    const navigate = useNavigate();
-
-    const apiFetchedData = {};
-
 
 
     return (

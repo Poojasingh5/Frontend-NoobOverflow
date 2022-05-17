@@ -9,15 +9,13 @@ function Login1() {
 
   const apiReturn = demo;
 
-  function handleSuccess(response) {
-    console.log(response);
-    console.log(apiReturn);
+  function handleSuccess() {
+    alert("Login Successfull !");
     navigate('/organizations', { state: apiReturn });
   }
 
-  function handleFailure(response) {
-    console.log(response);
-    alert('Authentication Failed !');
+  function handleFailure() {
+    alert("Login Successfull !");
     navigate('/organizations', { state: apiReturn });
   }
   return (

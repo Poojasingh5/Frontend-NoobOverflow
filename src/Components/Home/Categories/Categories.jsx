@@ -5,6 +5,7 @@ import categoriesList from "./categoriesList";
 import Mode from "./Mode/Mode";
 
 export default function Categories(props) {
+    
     const [isOpened, setIsOpened] = useState(false);
 
     function updateIsOpened() {

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import demoOrgList from './demoAllOrgList';
 import styles from './AddOrgForm.module.css'
 
 export default function AddOrgForm() {
