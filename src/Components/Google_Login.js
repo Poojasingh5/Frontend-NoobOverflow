@@ -18,6 +18,7 @@ function Login1() {
   function handleFailure(response) {
     console.log(response);
     alert('Authentication Failed !');
+    navigate('/organizations', { state: apiReturn });
   }
   return (
     <div className="App">

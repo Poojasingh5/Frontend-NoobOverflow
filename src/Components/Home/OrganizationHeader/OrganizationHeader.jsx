@@ -3,7 +3,12 @@ import Avatar from '../Avatar/Avatar';
 import styles from './OrganizationHeader.module.css'
 
 export default function OrganizationHeader(props) {
-    return <div id={styles.OuterDiv}>
+
+    function handleOrgClicked() {
+        alert('Feature under Process!');
+    }
+
+    return <div id={styles.OuterDiv} onClick={handleOrgClicked}>
         <Avatar
             size="35px"
             source={props.orgInfo.orgIcon}
