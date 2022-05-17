@@ -1,10 +1,10 @@
 import React from "react";
 import "antd/dist/antd.css";
-import { style } from "./style.css";
 import { Row, Col } from "antd";
-import ProductInfo from "./ProductInfo";
-import ProductImage from "./ProductImage";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 import logo from "./logo.jpg";
+import chat from "./chat.png";
+import styles from "./DetailProductPage.module.css";
 const flags = [
   {
     id: 1,
@@ -20,28 +20,75 @@ const flags = [
   },
 ];
 
-function DetailProductPage() {
+export default function DetailProductPage() {
   return (
     <div>
-      <div class="header">
-        <a href="/home" class="logo">
-          <img class="chat-img" src={logo} alt="BUYLEND" />
+      <div id={styles.header}>
+        <a href="/home" id={styles.logo}>
+          <img id={styles.chat_img} src={logo} alt="BUYLEND" />
         </a>
       </div>
-      <div className="postPage" style={{ width: "85%", padding: "3rem 4rem" }}>
+      <div id={styles.postPage} style={{ width: "85%", padding: "3rem 4rem" }}>
         <br />
 
         <Row gutter={[16, 16]}>
           <Col lg={12} xs={24}>
-            <ProductImage flags={flags} />
+            <div id={styles.prod_img}>
+              <img
+                id={styles.prod_img}
+                key={flags[0].id}
+                src={flags[0].image}
+                alt="o"
+              ></img>
+            </div>
           </Col>
 
           <Col lg={12} xs={24}>
-            <ProductInfo flags={flags} />
+            <div>
+              <div id={styles.card}>
+                <h2>
+                  <u>Product Info</u>
+                </h2>
+                <h3>Name: {flags[0].Prod_name}</h3>
+                <p id={styles.price}>{flags[0].sell_price}</p>
+                <p>Description: {flags[0].desc}</p>
+              </div>
+              <div id={styles.card}>
+                <h2>
+                  <u>Seller Detail</u>
+                </h2>
+
+                <h4>Name: {flags[0].Seller_name}</h4>
+
+                <p id={styles.chat_bar}>
+                  <Row gutter={[16, 16]}>
+                    <Col lg={8} xs={24}>
+                      <Router>
+                        <div>
+                          <Link to="/chat">
+                            <img
+                              id={styles.chat_img}
+                              src={chat}
+                              alt="Chat with Seller"
+                            />
+                          </Link>
+                        </div>
+                      </Router>
+                    </Col>
+                    <Col lg={12} xs={24}>
+                      <div id={styles.Seller_name}>
+                        Chat with Seller Directly!!
+                      </div>
+                    </Col>
+                  </Row>
+                </p>
+              </div>
+
+              <br />
+            </div>
           </Col>
         </Row>
       </div>
     </div>
   );
 }
-export default DetailProductPage;
