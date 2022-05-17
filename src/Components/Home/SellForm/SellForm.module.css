@@ -12,6 +12,7 @@
 #outer{
     position:fixed;
     height: min-content;
+    line-height: 1.2;
     top: 2%;
     left: 27%;
     z-index: 2;

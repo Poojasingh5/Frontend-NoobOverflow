@@ -1,0 +1,79 @@
+    .text {
+    text-align: center;
+    /* background-color:; */
+    }
+    
+    .label{
+    
+    display: block;
+    /* font-size: larger; */
+    /* padding: 5px;  */
+    /* font-size: 1.25rem; */
+    padding:5px;
+    /* margin-bottom: 1.38rem; */
+    text-align: center;
+    font-family: var(--headingFont);
+    font-weight: 200;
+    line-height: 1.75;
+    text-transform: capitalize;
+    letter-spacing: var(--letterSpacing);
+    }
+    
+    .input{
+    /* font-size: larger; */
+    text-align: center;
+    padding: 5px;
+    margin: 2px; 
+    
+    }
+    .btn{
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    font-size: larger;
+    display: block;
+    padding: 5px;
+    margin: 10px auto;
+    }
+    .btn2{
+    color: black;
+    background-color: rgb(211, 211, 211);
+    border-radius: 5px;
+    border-color: rgb(211, 211, 211);
+    padding:4px;
+    display: block;
+    text-align: center;
+    margin-left: 225px;  
+    margin-top: 20px ;
+    }
+    .btn3{
+        color: black;
+    background-color: rgb(211, 211, 211);
+    border-radius: 5px;
+    border-color: rgb(211, 211, 211);
+    padding: 4px;
+    margin: 5px 20px;
+    }
+
+    .messages{
+    display: flex;
+    justify-content: center;
+    }
+    
+    .error{
+    display: block;
+    /* background-color: red; */
+    /* color: white; */
+    /* width: fit-content;
+    height: 50px;
+    padding: 5px; */
+    }
+    
+    .success{
+    display: block;
+    background-color: lightblue;
+    color: black;
+    width: fit-content;
+    height: 50px;
+    padding: 5px;
+    }
