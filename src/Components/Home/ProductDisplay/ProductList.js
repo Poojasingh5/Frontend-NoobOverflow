@@ -2,7 +2,7 @@
 const ProductList = [
     {
         prodId: "1",
-        prodImg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQcj5NwDfUj8n2s8XWGI4db_Nno4cKMq9Omg&usqp=CAU",
+        prodImg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5l23xxvcz0-dRNpA06k1y_8nejqReyWufwg&usqp=CAU",
         prodTitle: "Quantum Chaurahe se kum rate me",
         prodDesc: "Lelo bhai kaam aayegi....Chaurahe se saste me derahe hai",
         rentPrice: "",
